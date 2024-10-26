@@ -53,14 +53,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         });
     }
 
-    private void deleteTask(Task task, int position) {
-        databaseHelper.deleteTask(task.getId());
-        taskList.remove(position);
-        notifyItemRemoved(position);
-        notifyItemRangeChanged(position, taskList.size());
-    }
-
-
     @Override
     public int getItemCount() {
         return taskList.size();

@@ -108,6 +108,6 @@ public class MainActivity extends AppCompatActivity {
     private void addTask() {
         // Open Task Detail Screen
         Intent intent = new Intent(MainActivity.this, TaskEditActivity.class);
-        startActivityForResult(intent, 1);
+        startActivity(intent);
     }
 }

@@ -55,7 +55,7 @@ public class TaskDetailsActivity extends AppCompatActivity {
                 buttonCompleteTask.setText("Mark As Complete");
             }
 
-            // Listen to save button on click
+            // Listen to button click
             buttonCompleteTask.setOnClickListener(view -> completeTask(taskCompleted));
         }
 
